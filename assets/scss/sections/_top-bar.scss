@@ -1,8 +1,8 @@
-.top-bar {
+.header__top-bar {
   background-color: $top-bar-background-color;
   padding: 10px 0;
 
-  &__link {
+  &-link {
     color: $top-bar-font-color;
     font-family: $top-bar-font-family;
     text-decoration: none;
@@ -16,7 +16,11 @@
     }
   }
 
-  &__item {
+  &-list {
+    justify-content: end;
+  }
+
+  &-item {
     margin-right: 1.063rem;
 
     &:last-of-type {
@@ -26,9 +30,12 @@
     i {
       font-size: 1.2rem;
     }
-  }
 
-  &__list {
-    justify-content: end;
+    &--temp,
+    &--wind,
+    &--water-temp,
+    &--maximize {
+      font-weight: bold;
+    }
   }
 }

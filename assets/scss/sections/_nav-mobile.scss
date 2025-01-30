@@ -1,0 +1,45 @@
+.header__mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; // Start buiten beeld
+    width: 250px;
+    height: 100%;
+    background: $mobile-menu-background; // Pas kleur aan
+    box-shadow: -2px 0 5px rgba(0, 0, 0, .2);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1000;
+  
+    &-list {
+      width: 100%;
+    }
+  
+    &-item {
+      margin-bottom: 15px;
+    }
+  
+    &-link {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: $mobile-menu-font-family;
+    }
+  
+    &-close {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+  
+    &.active {
+      right: 0;
+    }
+  }

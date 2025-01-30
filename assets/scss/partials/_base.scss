@@ -9,7 +9,6 @@ html {
   margin: 0 auto;
   max-width: 1200px; // Desktop breedte
   padding: 0 15px;
-  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -20,4 +19,23 @@ html {
 
 .d-flex {
   display: flex;
+}
+
+// Overlay die de rest van de pagina donkerder maakt
+.header__overlay {
+  background: $overlay-background-color;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 999;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
 }

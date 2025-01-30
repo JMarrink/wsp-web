@@ -1,0 +1,51 @@
+.header__nav {
+  background-color: $nav-bar-background-color;
+  padding: 15px 0;
+
+  .container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-list {
+    display: none;
+    gap: 30px;
+    justify-content: space-between;
+
+    @media screen and (min-width: 992px) {
+      display: flex;
+    }
+  }
+
+  &-link {
+    color: $main-nav-color;
+    font-family: $main-nav-font-family;
+    font-size: $main-nav-font-size;
+    font-weight: $main-nav-font-weight;
+    text-decoration: none;
+  }
+
+  &-search {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+
+    a {
+      color: $main-nav-search-color;
+    }
+  }
+
+  &-item {
+    &--mobile {
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+
+      a {
+        font-size: 40px;
+      }
+    }
+  }
+}
