@@ -75,27 +75,34 @@
     </section>
     <!-- Mobiel menu (verborgen standaard) -->
     <section class="header__mobile-menu">
-        <button class="header__mobile-menu-close"><i class="fa-regular fa-xmark"></i></button>
+        <div class="header__mobile-menu-header">
+            <button class="header__mobile-menu-close">
+                <i class="fa-regular fa-xmark"></i>
+            </button>
+        </div>
         <div class="header__mobile-menu-list">
             <div class="header__mobile-menu-item">
-                <a href="" class="header__mobile-menu-link">Varen en veiligheid</a>
+                <a href="" class="header__mobile-menu-link">Varen en veiligheid <i class="fa-solid fa-chevron-down"></i></a>
             </div>
             <div class="header__mobile-menu-item">
-                <a href="" class="header__mobile-menu-link">Watersportwinkel</a>
+                <a href="" class="header__mobile-menu-link">Watersportwinkel <i class="fa-solid fa-chevron-down"></i></a>
             </div>
             <div class="header__mobile-menu-item">
-                <a href="" class="header__mobile-menu-link">Vaarroutes</a>
+                <a href="" class="header__mobile-menu-link">Vaarroutes <i class="fa-solid fa-chevron-down"></i></a>
             </div>
             <div class="header__mobile-menu-item">
-                <a href="" class="header__mobile-menu-link">Jachthavens</a>
+                <a href="" class="header__mobile-menu-link">Jachthavens <i class="fa-solid fa-chevron-down"></i></a>
             </div>
             <div class="header__mobile-menu-item">
-                <a href="" class="header__mobile-menu-link">Getijden</a>
+                <a href="" class="header__mobile-menu-link">Getijden <i class="fa-solid fa-chevron-down"></i></a>
             </div>
         </div>
     </section>
     </header>
     <main>
+        <section class="hero">
+            
+        </section>
     </main>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
