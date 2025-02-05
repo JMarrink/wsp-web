@@ -1,8 +1,9 @@
 // --------------------------------------------------
 // vars
-
+@import 'partials/brand';
 @import 'partials/variables';
 @import 'helpers/fonts';
+@import 'helpers/resonsive';
 
 // --------------------------------------------------
 // bootstrap
@@ -31,5 +32,6 @@
 @import 'sections/top-bar';
 @import 'sections/nav-bar';
 @import 'sections/nav-mobile';
-
+@import 'sections/hero';
+@import 'sections/callout-cards';
 // @import your snippets here

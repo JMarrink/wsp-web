@@ -7,7 +7,8 @@
     <script src="https://kit.fontawesome.com/4a2ea5bef2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="/assets/css/core.min.css">
 </head>
@@ -100,10 +101,96 @@
     </section>
     </header>
     <main>
-        <section class="hero">
-            
-        </section>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">WatersportAlmanak</h1>
+                <h2 class="hero__subtitle">Dé gids voor alle watersporters</h2>
+                <p class="hero__description">
+                    WatersportAlmanak is de grootste informatiebron voor watersporters in Nederland. Op de website vindt u zeer veel informatie over varen in het algemeen, vaarregels, jachthavens, vaarroutes en natuurlijk de getijdentabellen van geheel Nederland.
+                </p>
+                <div class="hero__buttons">
+                    <a class="button button-primary" href="">Watersport winkel</a>
+                    <a class="button button-outline-light" href="">Getijden app</a>
+                </div>
+            </div>
+            <div class="callout-cards">
+                <!-- Slider main container -->
+                <div class="swiper" id="callout-swiper">
+                <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide card">
+                            <h4 class="card__title">Watersport winkel</h4>
+                            <p class="card__description">
+                                Wij leveren uitsluitend watersportartikelen waarvan we zelf vinden dat ze aan onze kwaliteitseisen voldoen
+                            </p>
+                            <a href="" class="card__link">
+                                Bekijk het aanbod <i class="fa-solid fa-arrow-right card__icon"></i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4 class="card__title">Watersport winkel</h4>
+                            <p class="card__description">
+                                Wij leveren uitsluitend watersportartikelen waarvan we zelf vinden dat ze aan onze kwaliteitseisen voldoen
+                            </p>
+                            <a href="" class="card__link">
+                                Bekijk het aanbod <i class="fa-solid fa-arrow-right card__icon"></i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4 class="card__title">Watersport winkel</h4>
+                            <p class="card__description">
+                                Wij leveren uitsluitend watersportartikelen waarvan we zelf vinden dat ze aan onze kwaliteitseisen voldoen
+                            </p>
+                            <a href="" class="card__link">
+                                Bekijk het aanbod <i class="fa-solid fa-arrow-right card__icon"></i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4 class="card__title">Watersport winkel</h4>
+                            <p class="card__description">
+                                Wij leveren uitsluitend watersportartikelen waarvan we zelf vinden dat ze aan onze kwaliteitseisen voldoen
+                            </p>
+                            <a href="" class="card__link">
+                                Bekijk het aanbod <i class="fa-solid fa-arrow-right card__icon"></i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4 class="card__title">Watersport winkel</h4>
+                            <p class="card__description">
+                                Wij leveren uitsluitend watersportartikelen waarvan we zelf vinden dat ze aan onze kwaliteitseisen voldoen
+                            </p>
+                            <a href="" class="card__link">
+                                Bekijk het aanbod <i class="fa-solid fa-arrow-right card__icon"></i>
+                            </a>
+                        </div>
+                        <div class="swiper-slide card">
+                            <h4 class="card__title">Watersport winkel</h4>
+                            <p class="card__description">
+                                Wij leveren uitsluitend watersportartikelen waarvan we zelf vinden dat ze aan onze kwaliteitseisen voldoen
+                            </p>
+                            <a href="" class="card__link">
+                                Bekijk het aanbod <i class="fa-solid fa-arrow-right card__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const heroSwiper = new Swiper('#callout-swiper', {
+            slidesPerView: "auto", // Zorgt ervoor dat slides hun natuurlijke breedte behouden
+      spaceBetween: 60, // Ruimte tussen de slides
+      centeredSlides: false, // Voorkomt dat de slides gecentreerd worden
+    //   freeMode: true, // Zorgt voor natuurlijk scrollen
+    //   watchOverflow: true, // Voorkomt dat Swiper scrollbaar is als er te weinig slides zijn
+        });
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuButton = document.querySelector(".header__nav-item--mobile .header__nav-link");

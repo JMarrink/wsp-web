@@ -11,5 +11,32 @@ $main-nav-search-color: #fff;
 
 $mobile-menu-background: #005d99;
 $mobile-menu-font-family: $main-nav-font-family;
+$mobile-menu-font-color: #fff;
+$mobile-menu-box-shadow: -2px 0 5px rgba(0, 0, 0, .2);
+$mobile-menu-list-divider-color: #ffffff24;
+$mobile-menu-close-color: #fff;
 
-$overlay-background-color:  rgba(0, 0, 0, .5);
+$overlay-background-color: rgba(0, 0, 0, .5);
+
+$button-primary-background-color: $main-brand-color;
+$button-primary-border-color: $button-primary-background-color;
+$button-primary-color: #fff;
+
+$button-light-background-color: $main-brand-color;
+$button-light-border-color: #fff;
+$button-light-color: #fff;
+
+$hero-title-font-family: "Lato", serif;
+$hero-text-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+$hero-description-font-family: "Roboto", serif;
+
+$hero-font-color: #fff;
+
+$card-font-family: "Lato", serif;
+$card-title-font-family: $card-font-family;
+$card-description-font-family: $card-font-family;
+$card-anchor-font-family: $card-font-family;
+$card-background-color: #fff;
+$card-font-color: #000;
+$card-description-font-color: #303030;
+$card-anchor-font-color: $card-font-color;

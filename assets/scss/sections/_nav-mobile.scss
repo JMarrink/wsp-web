@@ -1,16 +1,16 @@
 .header__mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -100%; // Start buiten beeld
-  width: 300px;
-  height: 100%;
-  background: $mobile-menu-background; // Pas kleur aan
-  box-shadow: -2px 0 5px rgba(0, 0, 0, .2);
-  transition: right 0.3s ease-in-out;
-  padding: 0 30px;
+  align-items: flex-start;
+  background: $mobile-menu-background;
+  box-shadow: $mobile-menu-box-shadow;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  height: 100%;
+  padding: 0 30px;
+  position: fixed;
+  right: -100%; // Start buiten beeld
+  top: 0;
+  transition: right .3s ease-in-out; // Slide in beeld
+  width: 300px;
   z-index: 1000;
 
   &-list {
@@ -18,34 +18,34 @@
   }
 
   &-header {
-    padding: 20px 0;
     display: flex;
-    width: 100%;
     justify-content: end;
+    padding: 20px 0;
+    width: 100%;
   }
 
   &-item {
-    padding-bottom: 15px;
+    border-bottom: 1px solid $mobile-menu-list-divider-color;
     margin-bottom: 15px;
-    border-bottom: 1px solid #ffffff24;
+    padding-bottom: 15px;
   }
 
   &-link {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: $mobile-menu-font-family;
-    font-weight: 500;
+    color: $mobile-menu-font-color;
     display: flex;
+    font-family: $mobile-menu-font-family;
+    font-size: 18px;
+    font-weight: 500;
     justify-content: space-between;
+    text-decoration: none;
   }
 
   &-close {
     background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
+    border: 0;
+    color: $mobile-menu-close-color;
     cursor: pointer;
+    font-size: 30px;
   }
 
   &.active {

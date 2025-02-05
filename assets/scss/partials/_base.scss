@@ -3,6 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: $main-brand-color;
+}
+
 * { margin: 0; padding: 0; }
 
 .container {
@@ -38,4 +42,26 @@ html {
     opacity: 1;
     visibility: visible;
   }
+}
+
+.callout-cards {
+  max-width: 100vw; // Voorkomt dat Swiper de viewport overschrijdt
+  overflow: hidden; // Voorkomt horizontaal scrollen
+  padding-right: 5vw; // Zorgt ervoor dat de laatste slide deels zichtbaar blijft
+  position: relative;
+  width: 100%;
+}
+
+.swiper {
+  overflow: visible; // Zorgt ervoor dat de laatste slide zichtbaar blijft
+  width: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0; // Voorkomt dat de slides kleiner worden
+  width: auto; // Laat de slides hun eigen breedte behouden
 }
