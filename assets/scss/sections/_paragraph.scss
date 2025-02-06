@@ -1,0 +1,55 @@
+.paragraph {
+  background-color: #fff;
+  padding-top: 40px;
+
+  &__img,
+  &__content {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  &__img {
+    padding: 30px;
+    flex-grow: 0.9;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-family: $paragraph-title-font;
+    font-size: 3.5rem;
+  }
+
+  &__description {
+    font-family: $paragraph-descripton-font;
+    font-size: 1.063rem;
+    line-height: 1.313rem;
+
+    p {
+      margin: 15px 0;
+    }
+  }
+
+  .paragraph__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  
+    @include responsive('desktop') {
+      flex-direction: row;
+    }
+  }
+
+  &--img-left {
+    .paragraph__wrapper {
+      flex-direction: column-reverse;
+
+      @include responsive('desktop') {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+
