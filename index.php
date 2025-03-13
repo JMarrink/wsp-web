@@ -17,8 +17,8 @@
 <header class="header">
     <section class="header__top-bar">
         <div class="container">
-            <a class="header__top-bar-link" href="#">
-                <div class="header__top-bar-list d-flex">
+            <div class="header__top-bar-list d-flex">
+                <a class="header__top-bar-link" href="#">
                     <div class="header__top-bar-item">
                         Friese kust:
                     </div>
@@ -34,8 +34,8 @@
                     <div class="header__top-bar-item header__top-bar-item--maximize">
                         <i class="fa-thin fa-maximize"></i>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
     </section>
     <section class="header__nav">
@@ -220,6 +220,82 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <section class="footer__mailchimp">
+            <div class="container">
+                <div class="footer__mailchimp-wrapper">
+                    <div class="footer__mailchimp-content">
+                        <h2 class="footer__mailchimp-title">Schrijf je in voor onze nieuwsbrief</h2>
+                        <p class="footer__mailchimp-description">We versturen uitsluitend nieuwsbrieven als we ook echt iets te melden hebben. <br>Dit is ook de reden waarom onze nieuwsbrieven onregelmatig verschijnen.</p>
+                    </div>
+                    <div class="footer__mailchimp-form">
+                        <form action="" method="post">
+                            <input type="email" class="footer__mailchimp-input" placeholder="Vul hier je e-mailadres in">
+                            <button type="submit" class="footer__mailchimp-button button button-primary">Schrijf je nu in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer__main">
+            <div class="container d-flex">
+                <div class="footer__main-item">
+                    <h3>Direct naar</h3>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="">Getijden</a></li>
+                        <li class="menu-item"><a href="">Getijden app</a></li>
+                        <li class="menu-item"><a href="">Vaarroutes</a></li>
+                        <li class="menu-item"><a href="">Jachthavens</a></li>
+                        <li class="menu-item"><a href="">Veiligheid</a></li>
+                        <li class="menu-item"><a href="">Watersportwinkel</a></li>
+                    </ul>
+                </div>
+                <div class="footer__main-item">
+                    <h3>Over watersportalmanak</h3>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="">Getijden</a></li>
+                        <li class="menu-item"><a href="">Getijden app</a></li>
+                        <li class="menu-item"><a href="">Vaarroutes</a></li>
+                        <li class="menu-item"><a href="">Jachthavens</a></li>
+                        <li class="menu-item"><a href="">Veiligheid</a></li>
+                        <li class="menu-item"><a href="">Watersportwinkel</a></li>
+                    </ul>
+                </div>
+                <div class="footer__main-item">
+                    <h3>Watersport winkel</h3>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="">Getijden</a></li>
+                        <li class="menu-item"><a href="">Getijden app</a></li>
+                        <li class="menu-item"><a href="">Vaarroutes</a></li>
+                        <li class="menu-item"><a href="">Jachthavens</a></li>
+                        <li class="menu-item"><a href="">Veiligheid</a></li>
+                        <li class="menu-item"><a href="">Watersportwinkel</a></li>
+                    </ul>
+                </div>
+                <div class="footer__main-item">
+                    <h3>Contact</h3>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="">Getijden</a></li>
+                        <li class="menu-item"><a href="">Getijden app</a></li>
+                        <li class="menu-item"><a href="">Vaarroutes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="footer__bottom">
+            <div class="container d-flex">
+                <div class="footer__bottom-copy">© 2025 <a href="">Mucho Media</a></div>
+                <div class="footer__bottom-menu">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="">Voorwaarden</a></li>
+                        <li class="menu-item"><a href="">Voorwaarden</a></li>
+                        <li class="menu-item"><a href="">Voorwaarden</a></li>
+                        <li class="menu-item"><a href="">Voorwaarden</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>

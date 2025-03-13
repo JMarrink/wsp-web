@@ -12,7 +12,7 @@
     gap: 30px;
     justify-content: space-between;
 
-    @media screen and (min-width: 992px) {
+    @include respond(laptop) {
       display: flex;
     }
   }
@@ -28,7 +28,7 @@
   &-search {
     display: none;
 
-    @media screen and (min-width: 992px) {
+    @include respond(laptop) {
       display: block;
     }
 
@@ -39,7 +39,7 @@
 
   &-item {
     &--mobile {
-      @media screen and (min-width: 992px) {
+      @include respond(laptop) {
         display: none;
       }
 

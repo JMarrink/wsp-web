@@ -1,0 +1,42 @@
+.footer__bottom {
+    padding: 20px 0;
+    color: $footer-bottom-font-color;
+    font-family: $footer-bottom-font-family;
+
+    .d-flex {
+        justify-content: space-between;
+    }
+
+    &-copy {
+        font-size: 0.9rem;
+
+        a {
+            color: $footer-bottom-font-color;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: inline;
+
+            &::after {
+                content: "|";
+                margin: 0 10px;
+            }
+
+            &:last-of-type::after {
+                content: "";
+                margin: 0;
+            }
+
+            a {
+                color: $footer-bottom-font-color;
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+        }
+    }
+}

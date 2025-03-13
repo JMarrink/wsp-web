@@ -1,0 +1,48 @@
+.footer__mailchimp {
+  &-wrapper {
+    background-color: $footer-mailchimp-background-color;
+    margin: -40px 0 0;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.50);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-content {
+    width: 50%;
+  }
+
+  &-title {
+    font-family: $footer-mailchimp-title-font-family;
+    margin-bottom: 10px;
+  }
+
+  &-description {
+    font-family: $footer-mailchimp-description-font-family;
+  }
+
+  &-form {
+    // flex-grow: 4;
+
+    form {
+      display: flex;
+      gap: 20px;
+    }
+
+    .button-primary {
+      padding: 0.8rem 2rem;
+    }
+  }
+
+  &-input {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    min-width: 300px;
+    font-size: 1rem;
+  }
+}
+
+

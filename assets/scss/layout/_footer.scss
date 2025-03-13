@@ -1,0 +1,31 @@
+.footer__main {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    &-item {
+        width: 25%;
+        color: #FFF;
+        font-family: 'Lato';
+
+        h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .menu {
+            padding-left: 0;
+        }
+
+        .menu-item {
+            list-style: none;
+            margin-bottom: 10px;
+
+            a {
+                color: #FFF;
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 1.125rem;
+            }
+        }
+    }
+}

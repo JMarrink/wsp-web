@@ -3,6 +3,7 @@
   padding: 10px 0;
 
   &-link {
+    display: flex;
     color: $top-bar-font-color;
     font-family: $top-bar-font-family;
     text-decoration: none;

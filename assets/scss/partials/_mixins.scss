@@ -30,3 +30,19 @@
     top: 0;
   }
 }
+
+@mixin respond($device) {
+  @if $device == phone {
+    @media (min-width: 576px) { @content; } // Small smartphones (e.g., iPhone SE, Galaxy S)
+  } @else if $device == tablet {
+    @media (min-width: 768px) { @content; } // Tablets (e.g., iPad, Galaxy Tab)
+  } @else if $device == laptop {
+    @media (min-width: 1024px) { @content; } // Small laptops and large tablets
+  } @else if $device == desktop {
+    @media (min-width: 1280px) { @content; } // Standard desktop screens
+  } @else if $device == widescreen {
+    @media (min-width: 1600px) { @content; } // Large monitors, ultrawide screens
+  }
+}
+
+
