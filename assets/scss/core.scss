@@ -25,7 +25,9 @@
 
 @import 'layout/footer';
 @import 'layout/header';
-
+@import 'layout/breadcrumbs';
+@import 'layout/pagetitle';
+@import 'layout/page';
 
 // --------------------------------------------------
 // sections
@@ -39,4 +41,5 @@
 @import 'sections/footer-bottom';
 @import 'sections/port-grid';
 @import 'sections/relatedproduct';
+@import 'sections/ports';
 // @import your snippets here

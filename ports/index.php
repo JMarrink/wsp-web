@@ -33,10 +33,10 @@
             <div class="page__container">
             <section class="page__ports-description">
                 <h2>
-                    Jachthavens in Nederland
+                    Overzicht jachthavens Nederland, België en Duitsland
                 </h2>
                 <p>
-
+                    Regelmatig publiceren wij verslagen van jachthavens die door de redactie van de watersportalmanak zijn bezocht. Soms zijn de verslagen zeer actueel, maar soms ook vanuit een langer geleden bezoek. Het gaat hier niet om een ultieme test van alle jachthavens maar om een persoonlijke en algemene indruk, aangevuld met feiten, meningen en tarieven. 
                 </p>
             </section>
             <section class="relatedproduct">

@@ -1,0 +1,36 @@
+.breadcrumbs {
+  margin: 15px 0;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'roboto', sans-serif; //TODO : Change this to the main brand font
+    font-size: 14px;
+
+    li {
+      display: inline;
+      margin-right: 5px;
+
+      &::after {
+        content: "\f054";
+        font-family: "Font Awesome 6 Pro";
+        font-weight: 900;
+        display: inline-block;
+        margin-left: 6px;
+        color: $card-font-color;
+      }
+
+      &:last-child::after {
+        content: none;
+        margin: 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #000; //TODO: Change this to color variable
+    }
+  }
+}
