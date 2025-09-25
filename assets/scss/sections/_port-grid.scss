@@ -1,0 +1,78 @@
+.port__grid {
+    margin-top: 20px;
+    &-title {
+        font-size: 2.063rem;
+        font-family: roboto;
+        margin-bottom: 20px;
+    }
+}
+
+.port__card {
+    border: 1px solid #979797;
+    border-radius: 8px;
+    font-family: $port-card-title-font-family;
+    padding: 13px;
+    position: relative;
+
+    &-title {
+        font-family: $port-card-title-font-family;
+        font-size: $port-card-title-font-size;
+        font-weight: 700;
+    }
+
+    &-info {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-weight: 800;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    ul {
+        list-style: none;
+        margin-top: 5px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    &-link {
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    .port__rating {
+        color: #008A5F;
+    }
+
+    .port__link {
+        font-size: 18px;
+        color: #000;
+    }
+
+    &::after {
+        content: "";
+        background-image: url(/assets/images/hindelopen.png);
+        mask-image: url(/assets/images/mask.svg);
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        background-position: right;
+        background-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        mask-size: 100%;
+        background-size: contain;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+
+}
+

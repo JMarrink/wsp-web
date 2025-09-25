@@ -2,6 +2,7 @@
     padding: 20px 0;
     color: $footer-bottom-font-color;
     font-family: $footer-bottom-font-family;
+    background-color: $main-brand-color; //TODO: Change this to the main brand color
 
     .d-flex {
         justify-content: space-between;

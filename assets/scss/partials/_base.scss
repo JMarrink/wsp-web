@@ -1,10 +1,11 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
+  background-color: #F7F7F7;
 }
 
 body {
-  background-color: $main-brand-color;
+  // background-color: $main-brand-color;
 }
 
 * { margin: 0; padding: 0; }
@@ -100,4 +101,20 @@ body {
     width: auto; // Laat de slides hun eigen breedte behouden
   }
 
+}
+
+main {
+  margin-bottom: 40px;
+}
+
+.page__container {
+  background: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.50);
+  padding: 30px;
+}
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem; 
+  @return $remValue;
 }
