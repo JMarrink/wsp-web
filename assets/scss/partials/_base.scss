@@ -118,3 +118,17 @@ main {
   $remValue: ($value / 16) + rem; 
   @return $remValue;
 }
+
+.with-sidebar {
+  width: 100%;
+
+  @include respond('laptop') {
+    width: 80%;
+  }
+}
+
+.content-with-sidebar {
+  .container {
+    display: flex;
+  }
+}

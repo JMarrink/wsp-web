@@ -4,13 +4,6 @@
         /* background-color: #FFF; */
         min-height: 100vh;
     }
-
-    .port__grid-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-column-gap: 25px;
-            grid-row-gap: 25px;
-        }
 </style>
 <main>
     <section class="breadcrumbs">
@@ -70,6 +63,15 @@
             <section class="port__grid">
                 <div class="port__grid-header">
                     <h3 class="port__grid-title">Jachthavens</h3>
+                    <div class="port__grid-sort">
+                        <select name="sort" id="sort">
+                            <option value="name-asc">Nederland</option>
+                            <option value="name-desc">Naam (Z-A)</option>
+                            <option value="rating-asc">Beoordeling (laag naar hoog)</option>
+                            <option value="rating-desc">Beoordeling (hoog naar laag)</option>
+                        </select>
+                        <input type="text" name="search" id="" placeholder="Zoek een jachthaven">
+                    </div>
                 </div>
                 <div class="port__grid-container">
                     <div class="port__card">

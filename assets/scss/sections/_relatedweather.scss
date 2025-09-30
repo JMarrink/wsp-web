@@ -1,0 +1,118 @@
+// Related weather theme colors
+$relatedweather-background-color: #005d99;
+$relatedweather-foreground-color: #fff;
+
+.relatedweather {
+  background-color: $relatedweather-background-color;
+  margin: 20px -30px;
+  padding: 35px;
+  color: $relatedweather-foreground-color;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include respond('laptop') {
+      flex-direction: row;
+    }
+  }
+
+  &__title {
+    font-family: 'roboto';
+    font-weight: 700;
+    font-size: 30px;
+
+    i {
+      font-size: 73px;
+    }
+  }
+
+  &__now-temp {
+    font-family: 'lato';
+    font-size: 84px;
+    position: relative;
+
+    &::after {
+      content: "°C";
+      font-size: 24px;
+      position: absolute;
+      top: 12px;
+      right: -30px;
+    }
+  }
+
+  &__now-details {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  &__now-details-container {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__forecast {
+    text-align: right;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    li {
+      display: none;
+      list-style: none;
+      flex-direction: column;
+      border-right: 1px solid;
+      padding: 0 20px;
+      font-family: 'Lato';
+      font-weight: 700;
+      font-size: 30px;
+      align-items: center;
+
+      @include respond('tablet') {
+        display: flex;
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    i {
+      margin: 8px 0;
+      font-size: 48px;
+    }
+  }
+
+  &__forecast-temp {
+    font-weight: 300;
+  }
+
+  &__btn {
+    color: $relatedweather-foreground-color;
+    font-family: 'lato';
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    padding-right: 20px;
+
+    //add as after arrow
+    &::after {
+      content: "\f061";
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 900;
+      margin-left: 10px;
+      text-decoration: none;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

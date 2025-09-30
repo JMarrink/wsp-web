@@ -5,8 +5,41 @@
         font-family: roboto;
         margin-bottom: 20px;
     }
-}
 
+    &-container {
+            display: grid;
+            grid-column-gap: 25px;
+            grid-row-gap: 25px;
+
+            @include respond('tablet') {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        select, input {
+            border: 2px solid #C0D1E6;
+            border-radius: 4px;
+            padding: 9px;
+            font-family: 'Roboto';
+            color: #31589E;
+            width: 110px;
+            overflow: hidden;
+        }
+
+        input {
+            width: 170px;
+            padding: 10px;
+
+            &::placeholder {
+                color: #466baf;
+            }
+        }
+    }
+}
 .port__card {
     border: 1px solid #979797;
     border-radius: 8px;
